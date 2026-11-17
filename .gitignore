@@ -1,0 +1,55 @@
+# Virtual environments
+veg_enc_env/
+venv/
+.venv/
+env/
+.conda/
+
+# Thesis PDFs and documents (excluded per repository policy)
+*.pdf
+*.docx
+*.pptx
+*.pages
+
+# Large datasets and point clouds
+*.las
+*.laz
+*.pcd
+*.bag
+*.tif
+*.tiff
+*.npy
+*.npz
+*.pt
+**/processed_data/
+**/processed_data_optimized/
+**/ml_ready/
+**/test_set_data/
+**/test_set_data_vegetation/
+**/behms_corridor/
+**/kiod_vepl_labeled/
+
+# Model checkpoints and weights
+*.pth
+*.ckpt
+*.h5
+*.onnx
+lightning_logs/
+outputs*/
+output_*/
+predictions/
+evaluation_results/
+test_visualizations/
+
+# Python / Jupyter caches
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# OS / IDE files
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*~

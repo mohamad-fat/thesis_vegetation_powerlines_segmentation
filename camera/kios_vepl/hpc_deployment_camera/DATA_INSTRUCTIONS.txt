@@ -1,0 +1,27 @@
+================================================================================
+IMPORTANT: PROCESSED DATA REQUIRED
+================================================================================
+
+The processed_data/ folder is NOT included in this directory yet.
+
+You need to:
+
+1. Run the preprocessing notebook FIRST:
+   cd ../notebooks
+   jupyter notebook preprocess_kios_vepl.ipynb
+
+   Execute all cells to generate:
+   ../processed_data/images/    (tiled 256x256 images)
+   ../processed_data/masks/     (binary power line masks)
+
+2. After preprocessing completes, run the preparation script:
+   ./prepare_for_hpc.sh
+
+   This will:
+   - Copy processed_data/ to this folder
+   - Verify all required files
+   - Create a compressed archive for easy transfer to HPC
+
+3. Transfer to HPC (see README.md for detailed instructions)
+
+================================================================================
